@@ -1,61 +1,120 @@
-@font-face {
-    font-family: "Roboto-Light";
-    src: url("../assets/Roboto-Light.ttf") format(".ttf");
-  }
-
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    font-family: Roboto-Light;
-
+html, body {
+    font-family: 'Poppins', sans-serif;
  }
 
- .container {
-     max-height: 60vh;
-     margin: 5%;
-     font-family: Roboto-Light;
+ body {
+    margin: 2%;
+    border: 1px solid black;
  }
-
- .container-header {
-     max-width: 100%;
- }
-
- .container-header h1, 
- .container-header h2 {
-    width: 100%;
- }
-
- .container-header-bio {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 5%;
- }
-
- .container-header-bio div {
-    display: flex;
- }
-
-.container-header-bio-slideshow {
-    display: flex;
-    max-width: 50%;
-    flex: 0 1 50%;
-    margin: 0;
-}
-
-.container-header-bio-caption {
-    flex: 0 1 40%;
-    flex-wrap: wrap;
-    max-width: 40%;
-}
-
-.container-header-bio-caption p {
-    width: 100%;
-}
 
 video, source {
-    display: flex;
+    margin: 0;
     width: 100%    !important;
     height: auto   !important;
 }
+
+/* #page-title {
+    display: none;
+} */
+
+.h2 {
+    font-size: 30pt;
+}
+
+.title {
+    font-size: 20pt;
+}
+
+.response-title {
+    font-size: 16pt;
+    line-height: 0.5;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 0.7;
+}
+
+.subtitle-response {
+    font-weight: 300;
+    font-size: 10pt;
+    line-height: 0.7;
+    padding-bottom: 20px;
+}
+
+.long-citation {
+    padding: 0 50px 0 50px;
+    line-height: 1.2;
+}
+
+.source-section {
+    padding-top: 20px;
+}
+
+.border-bot {
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+li {
+    line-height: 4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 50vh;
+}
+
+#menu {
+    width: 20%;
+    min-width: 200px;
+}
+
+#responses {
+    width: 75%;
+}
+
+.nodisplay {
+    display: none;
+}
+
+.active {
+    display: block;
+    margin-top: 5%;
+    line-height: 1.8;
+    padding-bottom: 20%;
+}
+
+
+@media all and (max-width: 1050px) {
+
+    .flex {
+        justify-content: left;
+    }
+
+
+    #menu {
+        width: 100%;
+    }
+
+    #responses {
+        width: 100%;
+    }
+
+  }
