@@ -4,7 +4,9 @@ html, body {
 
  body {
     margin: 2%;
-    border: 1px solid black;
+    border: 1px solid #7283A6;
+    background-color: #F2EBC4;
+    color: #020659;
  }
 
 video, source {
@@ -13,9 +15,9 @@ video, source {
     height: auto   !important;
 }
 
-/* #page-title {
-    display: none;
-} */
+a {
+    color: #020659;
+}
 
 .h2 {
     font-size: 30pt;
@@ -54,7 +56,7 @@ video, source {
 }
 
 .border-bot {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #7283A6;
     padding-left: 10px;
 }
 
@@ -62,7 +64,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border-right: 1px solid black;
+    border-right: 1px solid #7283A6;
     cursor: pointer;
 }
 
@@ -99,6 +101,11 @@ a {
     margin-top: 5%;
     line-height: 1.8;
     padding-bottom: 20%;
+}
+
+.external li{
+    background-color: #020659 !important;
+    color: #F2EBC4;
 }
 
 
